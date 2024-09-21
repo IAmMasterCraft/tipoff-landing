@@ -29,18 +29,25 @@
   ],
   "shortcuts": [
     {
-      "name": "How's the weather today?",
-      "short_name": "Today",
-      "description": "View weather information for today",
-      "url": "/today?source=pwa",
-      "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
+      "name": "Tipoff - Privacy Policy",
+      "short_name": "privacy",
+      "description": "Privacy Policy page for Tipoff",
+      "url": "/privacy?source=pwa",
+      "icons": [{ "src": "/src/img/privacy-shortcut.png", "sizes": "192x192" }]
     },
     {
-      "name": "How's the weather tomorrow?",
-      "short_name": "Tomorrow",
-      "description": "View weather information for tomorrow",
-      "url": "/tomorrow?source=pwa",
-      "icons": [{ "src": "/images/tomorrow.png", "sizes": "192x192" }]
+      "name": "Tipoff - FAQ",
+      "short_name": "faq",
+      "description": "FAQ page for Tipoff",
+      "url": "/faq?source=pwa",
+      "icons": [{ "src": "/src/img/faq-shortcut.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Tipoff - Terms of Use",
+      "short_name": "terms",
+      "description": "Terms of Use page for Tipoff",
+      "url": "/faq?source=pwa",
+      "icons": [{ "src": "/src/img/terms-shortcut.png", "sizes": "192x192" }]
     }
   ],
   "screenshots": [
