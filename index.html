@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A soccer/football stats, predictions and betting tips"
+    />
+    <meta
+      name="keywords"
+      content="Tipoff, bets, predictions, tips, live scores, live matches, leagues"
+    />
+    <meta name="author" content="IAmMasterCraft" />
+    <link rel="icon" href="/src/img/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/src/img/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <title>Tipoff - Football Stats, Predictions & Betting Tips</title>
+
+    <!--add animation: gradient 60s ease infinite; to animation gradient, custom gradient here: https://cssgradient.io/-->
+    <style>
+      body {
+        font-family: "Merienda", cursive;
+        background: rgb(1, 153, 51);
+        background: linear-gradient(
+          150deg,
+          rgba(1, 153, 51, 1) 0%,
+          rgba(77, 172, 78, 1) 21%,
+          rgba(0, 212, 255, 1) 52%
+        );
+        background-size: 400% 400%;
+        animation: gradient 60s ease infinite;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <main class="container">
+      <div class="d-flex p-3 text-white my-3 rounded">
+        <div class="row">
+          <!-- SET YOUR LOGO HERE -->
+          <figure class="figure col-lg-3">
+            <img src="src/img/logo.png" class="figure-img img-fluid rounded" />
+          </figure>
+
+          <div class="col-lg-9">
+            <h1>Tipoff</h1>
+            <p class="lead">
+              Get the edge on the competition with Tipoff, your go-to app for
+              the latest football stats, predictions, and betting tips. Whether
+              you're a passionate fan, a seasoned bettor, or just love staying
+              on top of the game, Tipoff offers everything you need to make
+              informed decisions.
+              <br /><br />
+              Download Tipoff today and elevate your football experience!
+              Whether you are checking stats, following live scores, or looking
+              for your next winning bet, Tipoff has got you covered.
+            </p>
+            <p>
+              <img src="src/img/badges/ios.svg" width="35%" /><img
+                src="https://cdn.rawgit.com/steverichey/google-play-badge-svg/master/img/en_get.svg"
+                width="43%"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="myCarousel"
+        class="carousel slide my-3 rounded"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#000" />
+            </svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h2>Comprehensive Football Stats</h2>
+                <p>
+                  Access detailed statistics for leagues, teams, and players
+                  worldwide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#000" />
+            </svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h2>Personalised Experience</h2>
+                <p>Pin your favorite leagues and teams for easy access.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#000" />
+            </svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h2>Live Scores &amp; Updates</h2>
+                <p>
+                  Follow your favorite teams and leagues with real-time score
+                  updates and notifications.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#000" />
+            </svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h2>Betting Tips &amp; Analysis</h2>
+                <p>
+                  Share your predictions and stay ahead with several betting
+                  tips.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#000" />
+            </svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h2>User-Friendly Interface</h2>
+                <p>
+                  Navigate through a sleek and intuitive interface designed for
+                  football enthusiasts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev d-none"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next d-none"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="my-3 p-3 rounded">
+        <h1 class="pb-2 mb-0 text-white">Screenshots</h1>
+
+        <!-- SET YOUR SCREENSHOTS HERE -->
+        <div class="row align-items-center">
+          <figure class="figure col-lg-3">
+            <img
+              src="https://via.placeholder.com/1242x2208.png/000000/FFFFFF/?text=SCREENSHOT%201"
+              class="figure-img img-fluid rounded"
+            />
+          </figure>
+          <figure class="figure col-lg-3">
+            <img
+              src="https://via.placeholder.com/1242x2208.png/000000/FFFFFF/?text=SCREENSHOT%202"
+              class="figure-img img-fluid rounded"
+            />
+          </figure>
+          <figure class="figure col-lg-3">
+            <img
+              src="https://via.placeholder.com/1242x2208.png/000000/FFFFFF/?text=SCREENSHOT%203"
+              class="figure-img img-fluid rounded"
+            />
+          </figure>
+          <figure class="figure col-lg-3">
+            <img
+              src="https://via.placeholder.com/1242x2208.png/000000/FFFFFF/?text=SCREENSHOT%204"
+              class="figure-img img-fluid rounded"
+            />
+          </figure>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-muted py-5" style="background-color: black">
+      <div class="container text-white">
+        <p class="text-center">
+          <a href="https://github.com/IAmMasterCraft"
+            >Created with <span class="">❤️</span></a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
