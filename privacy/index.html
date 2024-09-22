@@ -233,15 +233,18 @@
     ></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // get platform params
-        console.log(window.location.search);
-        const urlParams = new URLSearchParams(window.location.search);
-        const platform = urlParams.get("platform");
-        if (platform.toLowerCase() === "mobile") {
-          // hide paragraphs in the footer
-          document.querySelectorAll("footer p").forEach((p) => {
-            p.style.display = "none";
-          });
+        try {
+          // get platform params
+          const urlParams = new URLSearchParams(window.location.search);
+          const platform = urlParams.get("platform");
+          if (platform.toLowerCase() === "mobile") {
+            // hide paragraphs in the footer
+            document.querySelectorAll("footer p").forEach((p) => {
+              p.style.display = "none";
+            });
+          }
+        } catch (error) {
+          console.error(error);
         }
       });
     </script>
