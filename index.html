@@ -21,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/manifest.json" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -276,25 +276,43 @@
         <div class="row align-items-center">
           <figure class="figure col-lg-3">
             <img
-              src="https://via.placeholder.com/1242x2208.png/000000/FFFFFF/?text=SCREENSHOT%201"
+              src="/src/img/Screenshot_home.png"
               class="figure-img img-fluid rounded"
             />
           </figure>
           <figure class="figure col-lg-3">
             <img
-              src="https://via.placeholder.com/1242x2208.png/000000/FFFFFF/?text=SCREENSHOT%202"
+              src="/src/img/Screenshot_tips.png"
               class="figure-img img-fluid rounded"
             />
           </figure>
           <figure class="figure col-lg-3">
             <img
-              src="https://via.placeholder.com/1242x2208.png/000000/FFFFFF/?text=SCREENSHOT%203"
+              src="/src/img/Screenshot_leagues.png"
               class="figure-img img-fluid rounded"
             />
           </figure>
           <figure class="figure col-lg-3">
             <img
-              src="https://via.placeholder.com/1242x2208.png/000000/FFFFFF/?text=SCREENSHOT%204"
+              src="/src/img/Screenshot_profile.png"
+              class="figure-img img-fluid rounded"
+            />
+          </figure>
+          <figure class="figure col-lg-3">
+            <img
+              src="/src/img/Screenshot_match.png"
+              class="figure-img img-fluid rounded"
+            />
+          </figure>
+          <figure class="figure col-lg-3">
+            <img
+              src="/src/img/Screenshot_stats.png"
+              class="figure-img img-fluid rounded"
+            />
+          </figure>
+          <figure class="figure col-lg-3">
+            <img
+              src="/src/img/Screenshot_h2h.png"
               class="figure-img img-fluid rounded"
             />
           </figure>
@@ -307,6 +325,7 @@
         <p class="text-center">
           <a href="/privacy">Privacy</a> &nbsp;||&nbsp;
           <a href="/faq">FAQ</a> &nbsp;||&nbsp;
+          <a href="/notice">Notice Board</a> &nbsp;||&nbsp;
           <a href="/terms">Terms of Use</a>
         </p>
         <br />
@@ -327,5 +346,19 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // get platform params
+        console.log(window.location.search);
+        const urlParams = new URLSearchParams(window.location.search);
+        const platform = urlParams.get("platform");
+        if (platform.toLowerCase() === "mobile") {
+          // hide paragraphs in the footer
+          document.querySelectorAll("footer p").forEach((p) => {
+            p.style.display = "none";
+          });
+        }
+      });
+    </script>
   </body>
 </html>

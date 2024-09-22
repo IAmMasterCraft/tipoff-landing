@@ -21,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/manifest.json" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -121,7 +121,7 @@
           Tipoff collects personal information that you provide directly to us,
           such as when you create or modify your account, subscribe to our
           services, participate in interactive features, or otherwise
-          communicate with us. The types of information we may collect include
+          communicate with us. The types of information I may collect include
           your name, email address, and any other information you choose to
           provide.
         </p>
@@ -130,36 +130,37 @@
       <div class="policy-section">
         <h2>2. Use of Information</h2>
         <p>
-          We use the information we collect to provide, maintain, and improve
-          our services. This includes using the information to:
+          I use the information I collect to provide, maintain, and improve my
+          services. This includes using the information to:
         </p>
         <ul>
-          <li>Personalise your experience with our app.</li>
+          <li>Personalise your experience with my app.</li>
           <li>Provide customer support and respond to your requests.</li>
           <li>Send you technical notices, updates, and security alerts.</li>
-          <li>Analyse usage trends to improve our services.</li>
+          <li>Analyse usage trends to improve my services.</li>
         </ul>
       </div>
 
       <div class="policy-section">
         <h2>3. Sharing of Information</h2>
         <p>
-          We may share the information we collect with third parties as
-          described below:
+          I may share the information I collect with third parties as described
+          below:
         </p>
         <ul>
           <li>
-            <strong>With Service Providers:</strong> We may share your
+            <strong>With Service Providers:</strong> I may share your
             information with third-party vendors and other service providers who
-            need access to your information to carry out work on our behalf, e.g. OneSignal, Firebase etc.
+            need access to your information to carry out work on my behalf, e.g.
+            OneSignal, Firebase etc.
           </li>
           <li>
-            <strong>For Legal Reasons:</strong> We may disclose your information
-            if we believe it is necessary to comply with applicable laws or
+            <strong>For Legal Reasons:</strong> I may disclose your information
+            if I believe it is necessary to comply with applicable laws or
             regulations, or to protect the rights and safety of others.
           </li>
           <li>
-            <strong>With Your Consent:</strong> We may share or disclose your
+            <strong>With Your Consent:</strong> I may share or disclose your
             information with your consent or at your direction.
           </li>
         </ul>
@@ -168,9 +169,9 @@
       <div class="policy-section">
         <h2>4. Data Security</h2>
         <p>
-          We take reasonable measures to protect your personal information from
+          I take reasonable measures to protect your personal information from
           unauthorized access, use, or disclosure. However, no internet-based
-          service is completely secure, and we cannot guarantee the absolute
+          service is completely secure, and I cannot guarantee the absolute
           security of your data.
         </p>
       </div>
@@ -188,10 +189,10 @@
       <div class="policy-section">
         <h2>6. Changes to the Privacy Policy</h2>
         <p>
-          We may update this Privacy Policy from time to time. If we make
-          significant changes, we will notify you through our app or by other
+          I may update this Privacy Policy from time to time. If I make
+          significant changes, I will notify you through my app or by other
           means. Please review this policy periodically for the latest
-          information on our privacy practices.
+          information on my privacy practices.
         </p>
       </div>
 
@@ -207,10 +208,10 @@
     <footer class="text-muted py-5" style="background-color: black">
       <div class="container text-white">
         <p class="text-center">
-          <a href="/privacy" class="text-decoration-none">Privacy</a>
-          &nbsp;||&nbsp;
-          <a href="/faq" class="text-decoration-none">FAQ</a> &nbsp;||&nbsp;
-          <a href="/terms" class="text-decoration-none">Terms of Use</a>
+          <a href="/privacy">Privacy</a> &nbsp;||&nbsp;
+          <a href="/faq">FAQ</a> &nbsp;||&nbsp;
+          <a href="/notice">Notice Board</a> &nbsp;||&nbsp;
+          <a href="/terms">Terms of Use</a>
         </p>
         <br />
         <hr />
@@ -230,5 +231,19 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // get platform params
+        console.log(window.location.search);
+        const urlParams = new URLSearchParams(window.location.search);
+        const platform = urlParams.get("platform");
+        if (platform.toLowerCase() === "mobile") {
+          // hide paragraphs in the footer
+          document.querySelectorAll("footer p").forEach((p) => {
+            p.style.display = "none";
+          });
+        }
+      });
+    </script>
   </body>
 </html>
