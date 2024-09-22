@@ -6,22 +6,22 @@
   "dir": "auto",
   "lang": "en-UK",
   "name": "Tipoff",
-  "id": "/?source=pwa",
-  "start_url": "/?source=pwa",
+  "id": "./?platform=pwa",
+  "start_url": "./?platform=pwa",
   "short_name": "tipoff",
   "description": "A soccer/football stats, predictions and betting tips",
   "icons": [
-    { "src": "/src/img/favicon.ico", "type": "image/x-icon", "sizes": "16x16 32x32" },
-    { "src": "/src/img/icon-192.png", "type": "image/png", "sizes": "192x192" },
-    { "src": "/src/img/icon-512.png", "type": "image/png", "sizes": "512x512" },
+    { "src": "./src/img/favicon.ico", "type": "image/x-icon", "sizes": "16x16 32x32" },
+    { "src": "./src/img/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "./src/img/icon-512.png", "type": "image/png", "sizes": "512x512" },
     {
-      "src": "/src/img/icon-192-maskable.png",
+      "src": "./src/img/icon-192-maskable.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "maskable"
     },
     {
-      "src": "/src/img/icon-512-maskable.png",
+      "src": "./src/img/icon-512-maskable.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"
@@ -32,33 +32,33 @@
       "name": "Tipoff - Privacy Policy",
       "short_name": "privacy",
       "description": "Privacy Policy page for Tipoff",
-      "url": "/privacy?source=pwa",
-      "icons": [{ "src": "/src/img/privacy-shortcut.png", "sizes": "192x192" }]
+      "url": "./privacy?platform=pwa",
+      "icons": [{ "src": "./src/img/privacy-shortcut.png", "sizes": "192x192" }]
     },
     {
       "name": "Tipoff - FAQ",
       "short_name": "faq",
       "description": "FAQ page for Tipoff",
-      "url": "/faq?source=pwa",
-      "icons": [{ "src": "/src/img/faq-shortcut.png", "sizes": "192x192" }]
+      "url": "./faq?platform=pwa",
+      "icons": [{ "src": "./src/img/faq-shortcut.png", "sizes": "192x192" }]
     },
     {
       "name": "Tipoff - Terms of Use",
       "short_name": "terms",
       "description": "Terms of Use page for Tipoff",
-      "url": "/faq?source=pwa",
-      "icons": [{ "src": "/src/img/terms-shortcut.png", "sizes": "192x192" }]
+      "url": "./faq?platform=pwa",
+      "icons": [{ "src": "./src/img/terms-shortcut.png", "sizes": "192x192" }]
     }
   ],
   "screenshots": [
     {
-      "src": "/src/img/Screenshot_stats.png",
+      "src": "./src/img/Screenshot_stats.png",
       "type": "image/png",
       "sizes": "540x720",
       "form_factor": "narrow"
     },
     {
-      "src": "/src/img/Screenshot_h2h.png",
+      "src": "./src/img/Screenshot_h2h.png",
       "type": "image/jpg",
       "sizes": "720x540",
       "form_factor": "wide"
