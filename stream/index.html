@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Live Streaming - Tipoff: Watch Football Matches"
+    />
+    <meta
+      name="keywords"
+      content="Tipoff, Live Streaming, Football, Matches, Watch Live"
+    />
+    <meta name="author" content="IAmMasterCraft" />
+    <link rel="icon" href="../src/img/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="../src/img/apple-touch-icon.png" />
+    <title>Live Streaming - Tipoff</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="../manifest.json" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        font-family: "Merienda", cursive;
+        background: rgb(1, 153, 51);
+        background: linear-gradient(
+          150deg,
+          rgba(1, 153, 51, 1) 0%,
+          rgba(77, 172, 78, 1) 21%,
+          rgba(0, 212, 255, 1) 52%
+        );
+        background-size: 400% 400%;
+        animation: gradient 60s ease infinite;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .stream-header {
+        background-color: #000;
+        color: white;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .empty-state {
+        text-align: center;
+        padding: 50px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.9);
+      }
+
+      .empty-state h3 {
+        color: #019933;
+        margin-bottom: 15px;
+      }
+
+      .match-table {
+        /* background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 15px; */
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+
+      .match-row {
+        margin-bottom: 15px;
+        padding: 15px;
+        background-color: rgba(240, 240, 240, 1);
+        border-radius: 10px;
+        display: flex;
+        /* column as flex direction */
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 0.9rem;
+      }
+
+      .match-row:hover {
+        background-color: rgba(200, 255, 200, 0.8);
+        transition: 0.3s;
+      }
+
+      .match-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #019933;
+      }
+
+      .team-logo {
+        height: 50px;
+        width: auto;
+        border-radius: 10%;
+      }
+      
+      .league-logo {
+        height: 20px;
+        width: auto;
+        border-radius: 10%;
+      }
+
+      .mouse-pointer {
+        cursor: pointer;
+      }
+
+      footer {
+        background-color: black;
+        color: white;
+      }
+
+      footer a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body class="bg-light">
+    <main class="container">
+      <!-- Header Section -->
+      <div class="stream-header my-5">
+        <h1>Live Football Matches</h1>
+        <p class="lead">
+          Watch live football matches with Tipoff. Browse the list of available
+          matches below and stream them directly.
+        </p>
+
+        <!-- Breadcrumb Navigation -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="index.html" class="text-success text-decoration-none"
+                >Home</a
+              >
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Live Streaming
+            </li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Match Listing Section -->
+      <div class="match-table">
+        <!-- Empty State Section -->
+        <div id="matchList" class="empty-state">
+          <h3>No Matches Available</h3>
+          <p class="lead">
+            Currently, there are no football matches available for streaming.
+            Please check back later for updates!
+          </p>
+          <img
+            src="https://via.placeholder.com/400x250?text=No+Matches+Available"
+            alt="No Matches"
+            class="img-fluid rounded"
+          />
+        </div>
+
+        <!-- Match 1 -->
+        <!-- <div class="match-row">
+          <div>
+            <p class="match-title">Barcelona vs Real Madrid</p>
+            <p>October 10, 2024 - 20:00 CET</p>
+          </div>
+          <a href="stream/barcelona-real-madrid.html" class="btn btn-success"
+            >Watch Live</a
+          >
+        </div> -->
+
+        <!-- Match 2 -->
+        <!-- <div class="match-row">
+          <div>
+            <p class="match-title">Manchester United vs Chelsea</p>
+            <p>October 10, 2024 - 22:00 CET</p>
+          </div>
+          <a href="stream/manchester-chelsea.html" class="btn btn-success"
+            >Watch Live</a
+          >
+        </div> -->
+
+        <!-- Match 3 -->
+        <!-- <div class="match-row">
+          <div>
+            <p class="match-title">Bayern Munich vs Borussia Dortmund</p>
+            <p>October 11, 2024 - 18:30 CET</p>
+          </div>
+          <a href="stream/bayern-dortmund.html" class="btn btn-success"
+            >Watch Live</a
+          >
+        </div> -->
+
+        <!-- Placeholder for No Stream -->
+        <!-- <div class="match-row">
+          <div>
+            <p class="match-title">Atletico Madrid vs Sevilla</p>
+            <p>October 11, 2024 - 21:00 CET</p>
+          </div>
+          <button class="btn btn-secondary disabled">Stream Unavailable</button>
+        </div> -->
+      </div>
+      <!-- LIVESTREAM MODAL -->
+      <div class="modal fade" id="streamModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="streamModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title mouse-pointer" id="streamModalLabel" data-bs-dismiss="modal"  onclick="closeStream()">< Livestream Site</h5>
+              <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close" onclick="closeStream()"></button>
+            </div>
+            <div class="modal-body" id="streamBody">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center py-5">
+      <div class="container text-white">
+        <p class="text-center">
+          <a href="../privacy">Privacy</a> &nbsp;||&nbsp;
+          <a href="../faq">FAQ</a> &nbsp;||&nbsp;
+          <a href="../notice">Notice Board</a> &nbsp;||&nbsp;
+          <a href="../terms">Terms of Use</a>
+        </p>
+        <br />
+        <hr />
+        <br />
+        <p>
+          <a
+            href="https://github.com/IAmMasterCraft"
+            class="text-decoration-none"
+            >Created with ❤️ by Tipoff Team</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+        var MATCH_LIST = [];
+      document.addEventListener("DOMContentLoaded", function () {
+        try {
+          // get platform params
+          const urlParams = new URLSearchParams(window.location.search);
+          const platform = urlParams.get("platform");
+          if (platform.toLowerCase() === "mobile") {
+            // hide paragraphs in the footer
+            document.querySelectorAll("footer p").forEach((p) => {
+              p.style.display = "none";
+            });
+          }
+        } catch (error) {
+          console.error(error);
+        }
+      });
+    </script>
+    <script>
+      async function setTeamLogo(link) {
+        // use '/' to split the link and add the  last item to 'https://cfcdn.apcqwd.com/zqwin007/Image/team/images/'
+        const linkSplit = link.split(".com/");
+        const baseSplit = linkSplit[0].split("/");
+        // const base = `${baseSplit[baseSplit.length - 1].replace(".", "")}`;
+        const base = "zqwin007";
+        const joiner = `${base}/${linkSplit[linkSplit.length - 1]}`;
+        const setLogoUrl = `https://cfcdn.apcqwd.com/${joiner}?v=1`;
+        return setLogoUrl;
+      }
+
+      async function openStream (streamLink) {
+        const streamBody = document.getElementById("streamBody");
+        streamBody.innerHTML = `
+            <iframe style="width: 100%; height: 100%;" frameborder="0"></iframe>
+        `;
+        fetch(streamLink)
+            .then(response => response.text())
+            .then(html => {
+                streamBody.querySelector('iframe').src = html;
+                // document.getElementById('content').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching content:', error));
+      }
+
+      async function closeStream () {
+        const streamBody = document.getElementById("streamBody");
+        streamBody.innerHTML = "";
+      }
+
+      async function fetchMatches() {
+        const matchList = document.getElementById("matchList");
+        
+        try {
+          const timestamp = Date.now();
+
+          // Fetch match data from the API with the timestamp
+          const response = await fetch(
+            `https://dapiab.apcqwd.com/api/merge/schedules?_t=${timestamp}`
+          );
+          if (!response.ok) {
+            throw new Error("Failed to fetch matches");
+          }
+          const data = await response.json();
+          console.log(data);
+          const matches = data.matchList;
+
+          // Check if matches are available
+          if (!matches || matches.length === 0) {
+            matchList.innerHTML = `
+                <div class="empty-state">
+                    <h3>No Matches Available</h3>
+                    <p class="lead">Currently, there are no football matches available for streaming. Please check back later!</p>
+                </div>
+            `;
+            return;
+          }
+
+          // Populate match list
+          matchList.innerHTML = ""; // Clear the "Loading Matches..." message
+          matches.forEach(async (match) => {
+            const {
+              homeId,
+              awayId,
+              homeName,
+              awayName,
+              leagueId,
+              countryId,
+              leagueEn,
+              matchTime_t,
+              matchId,
+              teamLink,
+              homeLogoUrl,
+              awayLogoUrl,
+            } = match;
+
+            // Dynamically generate URLs
+            const setHomeLogoUrl = await setTeamLogo(homeLogoUrl);
+            const setAwayLogoUrl = await setTeamLogo(awayLogoUrl);
+            const leagueLogo = `https://cfstatic.apcqwd.com/img/site/region/${countryId}-flag-small.png`;
+
+            const matchDate = new Date(matchTime_t).toLocaleString();
+            const streamLink = `https://afr.808ball.com/football/${matchId}-${teamLink}.html`;
+            if (
+                (!setHomeLogoUrl  && !setAwayLogoUrl) ||
+                (!homeName && !awayName) ||
+                (!leagueEn && !matchDate) ||
+                (!teamLink) ||
+                (leagueEn.toLowerCase().includes("boxing")) ||
+                (leagueEn.toLowerCase().includes("basketball")) ||
+                (leagueEn.toLowerCase().includes("snooker")) ||
+                (leagueEn.toLowerCase().includes("f1"))
+            )
+                return;
+
+            const matchRow = document.createElement("div");
+            matchRow.className = "match-row gap-3";
+            matchRow.innerHTML = `
+                <div class="d-flex justify-content-between align-items-center">
+                    <img src="${setHomeLogoUrl}" alt="${homeName}" class="team-logo me-2"> 
+                    <span>${homeName} vs. ${awayName}</span> 
+                    <img src="${setAwayLogoUrl}" alt="${awayName}" class="team-logo ms-2">
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex flex-column justify-content-start">
+                        <p><img src="${leagueLogo}" alt="${leagueEn}" class="league-logo"> ${leagueEn}</p>
+                        <p>${matchDate}</p>
+                    </div>
+                    <button class="btn ${ teamLink ? "btn-success" : "btn-secondary disabled"}" data-bs-toggle="modal" data-bs-target="#streamModal" onclick="openStream('${streamLink}')">
+                        ${teamLink ? "Watch Live" : "Unavailable"}
+                    </button>
+                </div>
+                
+            `;
+            matchList.appendChild(matchRow);
+            matchList.classList.remove("empty-state");
+          });
+        } catch (error) {
+          matchList.innerHTML = `
+                    <div class="empty-state">
+                        <h3>Error Fetching Matches</h3>
+                        <p class="lead">Unable to load matches at the moment. Please try again later.</p>
+                    </div>
+                `;
+          console.error("Error:", error);
+        }
+      }
+
+      // Fetch matches when the page loads
+      fetchMatches();
+    </script>
+  </body>
+</html>
