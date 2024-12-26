@@ -315,7 +315,6 @@
     fetchFixtures(`${today}T00:00:00Z`, `${tomorrow}T00:00:00Z`)
     .then(data => {
         if (data) {
-            console.log('Fetched Fixtures:', data);
             const fixtureList = document.getElementById('fixtureList');
             const matchTips = pickWinningTips(data);
             for (const match of matchTips) {
